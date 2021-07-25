@@ -1,0 +1,31 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+}
+
+button{
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  background-color: rgba(179, 179, 8, 0.87);
+  flex-basis: 7%;
+  cursor: pointer;
+  transition: all 200ms ease;
+  &:hover{
+    background-color: rgb(179, 179, 8);
+  }
+}
+
+
+.active{
+  color: black;
+  font-weight: bold;
+  
+}

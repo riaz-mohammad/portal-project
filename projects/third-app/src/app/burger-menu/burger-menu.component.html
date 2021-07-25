@@ -1,0 +1,6 @@
+<div class="burger-menu" (click)="menuClicked()">
+    <div [class.cross-down]="menuClick.value"></div>
+    <div *ngIf="!menuClick.value"></div>
+    <div [class.cross-up]="menuClick.value"></div>
+</div>
+

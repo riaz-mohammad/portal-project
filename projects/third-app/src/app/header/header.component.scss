@@ -1,0 +1,11 @@
+:host{
+  display: flex;
+  align-items: center;
+  height: 10%;
+  background-color: black;
+  h1{
+    flex-basis: 42%;
+    text-align: end;
+    color: yellow;
+  }
+}

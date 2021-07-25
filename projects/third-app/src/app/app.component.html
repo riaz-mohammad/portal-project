@@ -1,0 +1,14 @@
+<third-header>
+  <third-burger-menu #burgerMenu>
+  </third-burger-menu>
+</third-header>
+    
+<div>
+  <third-sidebar *ngIf="burgerMenu.menuClick$ | async"></third-sidebar>
+  <router-outlet></router-outlet>
+  <button class="order-button">ADD ORDER</button>
+</div>
+<third-footer></third-footer>
+
+
+
