@@ -1,3 +1,4 @@
+import { NotificationService } from './../notification.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./orders.component.scss']
 })
 export class OrdersComponent implements OnInit {
-
-  constructor() { }
+  public order(): void {
+    this.notificationService.showNotification({show: true, message: 'From Orders Component'})
+    console.log('%cFrom Order Component', 'color:yellow;font-weight:bold');
+  }
+  constructor(private notificationService: NotificationService) { }
 
   ngOnInit(): void {
   }

@@ -13,6 +13,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { OrdersComponent } from './orders/orders.component';
 import { PortalHostDirective } from './portal-host.directive';
 import { PortalGuestDirective } from './portal-guest.directive';
+import { ButtonComponent } from './button/button.component';
+import { CardComponent } from './card/card.component';
+import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { PortalGuestDirective } from './portal-guest.directive';
     ContactsComponent,
     OrdersComponent,
     PortalHostDirective,
-    PortalGuestDirective
+    PortalGuestDirective,
+    ButtonComponent,
+    CardComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,

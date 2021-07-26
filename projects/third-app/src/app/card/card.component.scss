@@ -1,0 +1,33 @@
+$border-radius: 20px;
+$background-color: linear-gradient(to right, rgb(70, 70, 17), rgba(0, 0, 0, 0.24));
+:host{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: $border-radius;
+  background-color: rgba(0, 0, 0, 0.541);
+  color: white;
+  overflow: hidden;
+  box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.329);
+  height: 300px;
+  width: 250px;
+}
+
+.item{
+  background-color: rgba(0, 0, 0, 0.253);
+  flex-basis: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.description{
+  background-image: $background-color;
+  flex-basis: 8%;
+  width: 80%;
+}
+  

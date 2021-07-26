@@ -13,4 +13,8 @@ export class PortalService {
   public addGuest(token: string, guest: TemplateRef<unknown>): void {
     this.portals.get(token)?.createEmbeddedView(guest);
   }
+
+  public removeGuest(token: string): void {
+    this.portals.get(token)?.clear();
+  }
 }

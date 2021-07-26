@@ -6,8 +6,17 @@
 <div>
   <third-sidebar *ngIf="burgerMenu.menuClick$ | async"></third-sidebar>
   <router-outlet></router-outlet>
-  <button class="order-button">ADD ORDER</button>
+  
+  <ng-container thirdPortalHost="portalHost"></ng-container>
+  
+  <ng-container *ngIf="notificationService.showNotification$ | async as message">
+       <third-notification *ngIf="message.show">
+            {{ message.message }}
+       </third-notification>
+  </ng-container>
+
 </div>
+
 <third-footer></third-footer>
 
 

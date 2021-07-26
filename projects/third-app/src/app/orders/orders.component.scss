@@ -1,0 +1,12 @@
+:host{
+  display: grid;
+  grid-template: .2fr 1fr / repeat(3, 1fr);
+  gap: 20px;
+
+}
+
+h3{
+  grid-area: 1 / 1 / 2 / -1;
+  text-align: center;
+  
+}
